@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\GroceriesCotroller;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProductsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,5 +64,7 @@ Route::get('/login', [GroceriesCotroller::class, 'login'])->name("login");
 Route::get('/detail', [GroceriesCotroller::class, 'detail'])->name("detail");
 Route::resource('contact', ContactController::class);
 Route::post('/comments/store', [CommentController::class, 'store'])->name('comment.store');
+
+Route::get('/admin/product', [ProductsController::class, 'index'])->name('admin.products.index');
 
 require __DIR__ . '/auth.php';
