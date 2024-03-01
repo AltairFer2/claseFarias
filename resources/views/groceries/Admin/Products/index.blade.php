@@ -26,23 +26,43 @@
             <section class="pb-0">
                 <div class="contact1 mb-5">
                     <div class="container">
-                        <div class="col-lg-12">
-                            <button id="loadProductsBtn" class="btn btn-primary">Load Products</button>
-                            <table class="table" id="tblProducts">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>NAME</th>
-                                        <th>PRICE</th>
-                                        <th>QUANTITY</th>
-                                        <th>DESCRIPTION</th>
-                                        <th>CATEGORY</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                </tbody>
-                            </table>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <button id="loadProductsBtn" class="btn btn-primary">Load Products</button>
+                                <table class="table table-default" id="tblProducts">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>NAME</th>
+                                            <th>PRICE</th>
+                                            <th>QUANTITY</th>
+                                            <th>DESCRIPTION</th>
+                                            <th>CATEGORY</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-6">
+                                <select id="categoryFilter" class="form-control mb-3">
+                                    <option value="">Select Category</option>
+                                    <!-- Suponiendo que las categorías se cargarán aquí -->
+                                </select>
+                                <br><br><br>
+                                <table class="table table-default" id="tblProductsDt">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>NAME</th>
+                                            <th>PRICE</th>
+                                            <th >QUANTITY</th>
+                                            <th>DESCRIPTION</th>
+                                            <th>CATEGORY</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
